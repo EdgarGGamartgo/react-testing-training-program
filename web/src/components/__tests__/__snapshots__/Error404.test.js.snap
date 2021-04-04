@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot of Error404 presentational component 1`] = `
+<DocumentFragment>
+  <div
+    style="background: rgb(35, 35, 35); min-height: 90vh; padding: 20px; color: white; text-align: center; position: relative;"
+  >
+    <h1
+      style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); margin: 0px -50% 0px 0px;"
+    >
+      PAGE NOT FOUND 404
+    </h1>
+    <button
+      style="position: absolute; top: 60%; left: 50%; transform: translateX(-50%) translateY(-60%); margin: 0px -50% 0px 0px; color: rgb(246, 82, 97); border: 2px solid #f65261; background-color: rgb(35, 35, 35);"
+    >
+      GO BACK TO HOME
+    </button>
+  </div>
+</DocumentFragment>
+`;
