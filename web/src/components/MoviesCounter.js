@@ -17,10 +17,10 @@ const MoviesCounter = ({ className, movies }) => {
         <>
         {
             movies.length !== 0 
-            ? <div className={className}>
+            ? <div data-testid="movies" className={className}>
                 {movies.length} movies found
               </div> 
-            : <div style={noMoviesFound}>
+            : <div data-testid="movies2" style={noMoviesFound}>
                 NO MOVIES FOUND
               </div>
         }
@@ -30,6 +30,10 @@ const MoviesCounter = ({ className, movies }) => {
 
 MoviesCounter.propTypes = {
     className: PropTypes.string.isRequired,
+}
+
+MoviesCounter.defaultProps = {
+    className: ''
 }
 
 const mapStateToProps = state => {

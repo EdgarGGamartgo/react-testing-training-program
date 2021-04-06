@@ -14,7 +14,7 @@ import {
     DELETE_MOVIE_ERROR,
 } from "./movieTypes"
 
-const initialState = {
+export const initialState = {
         id: 1,
         title: 'Pulp Fiction',
         genre: 'Action & Adventure',
