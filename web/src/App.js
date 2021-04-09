@@ -7,16 +7,19 @@ import { ErrorBoundary } from './components'
 import { Provider } from 'react-redux'
 import store from './redux/store'
 import { Error404 } from './components/Error404'
+import ReduxTest from './components/ReduxTest'
 
 const HomePage = () => {
 	return (
-		<ErrorBoundary>
-        <Provider store={store}>
-          <HeaderContainer/>
-          <MainContainer/>
-          <FooterContainer/>
-        </Provider>
-      </ErrorBoundary>
+		 <ErrorBoundary>
+         <Provider store={store}>
+    <ReduxTest/>
+
+           {/* <HeaderContainer/>
+           <MainContainer/>
+           <FooterContainer/> */}
+         </Provider>
+       </ErrorBoundary>
 	)
 };
 

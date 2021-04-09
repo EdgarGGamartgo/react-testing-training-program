@@ -110,7 +110,7 @@ export const deleteMovieError = (error) => {
 export const fetchMovies = (filters) => {
     return (dispatch) => {
         dispatch(fetchMoviesRequest)
-        axios.get(`http://localhost:4000/movies/${filters ? filters : ''}`)
+        return axios.get(`http://localhost:4000/movies/${filters ? filters : ''}`)
             .then(res => {
                 const movies = res.data.data
                 dispatch(fetchMoviesSuccess(movies))
@@ -125,7 +125,7 @@ export const fetchMovies = (filters) => {
 export const addMovie = (body) => {
     return (dispatch) => {
         dispatch(createMovieRequest())
-        axios.post('http://localhost:4000/movies', body)
+        return axios.post('http://localhost:4000/movies', body)
             .then(res => {
                 const movie = res.data.data
                 dispatch(createMovieSuccess(movie))
@@ -140,7 +140,7 @@ export const addMovie = (body) => {
 export const editMovie = (body) => {
     return (dispatch) => {
         dispatch(editMovieRequest())
-        axios.put('http://localhost:4000/movies', body)
+        return axios.put('http://localhost:4000/movies', body)
             .then(res => {
                 const movie = res.data.data
                 dispatch(editMovieSuccess(movie))
@@ -155,7 +155,7 @@ export const editMovie = (body) => {
 export const deleteMovie = (id) => {
     return (dispatch) => {
         dispatch(deleteMovieRequest())
-        axios.delete(`http://localhost:4000/movies/${id}`)
+        return axios.delete(`http://localhost:4000/movies/${id}`)
             .then(res => {
                 dispatch(deleteMovieSuccess())
             })

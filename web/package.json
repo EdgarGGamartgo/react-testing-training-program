@@ -19,6 +19,7 @@
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.9",
     "redux-logger": "^3.0.6",
+    "redux-mock-store": "^1.5.4",
     "redux-thunk": "^2.3.0",
     "styled-icons": "^10.29.0",
     "web-vitals": "^1.1.0"
@@ -28,7 +29,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "pub": "git add . && git commit -m \"Updates\" && git push && git status"
+    "pub": "git add . && git commit -m \"Updates\" && git push && git status",
+    "coverage:report": "npm test -- --coverage"
   },
   "eslintConfig": {
     "extends": [
